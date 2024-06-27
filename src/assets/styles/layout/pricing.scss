@@ -1,0 +1,89 @@
+@import '../base/colors';
+
+#pricing {
+	background-color: #212121;
+	padding: 60px 0;
+	.pricing {
+		.pricing-top {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			padding: 96px 0;
+			h4 {
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 36px;
+				color: $secondary-color;
+			}
+			h3 {
+				font-size: 46px;
+				font-weight: 700;
+				padding-bottom: 12px;
+			}
+			p {
+				font-size: 20px;
+				line-height: 32px;
+			}
+		}
+		.pricing-bottom {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 32px;
+			align-items: center;
+			padding-bottom: 60px;
+			.pricing-box {
+				height: 324px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: stretch;
+				border: 1px solid #e4e7ec;
+				border-radius: 16px;
+				text-align: center;
+				padding: 40px 32px 32px 32px;
+				gap: 40px;
+				.pricing-box-head {
+					font-size: 42px;
+					line-height: 44px;
+					font-weight: 700;
+				}
+				.pricing-box-subhead {
+					padding: 32px 0 16px 0;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 32px;
+				}
+				.pricing-box-text {
+					max-width: 260px;
+					color: #d9d9d9;
+					opacity: 0.9;
+				}
+				.business-plan-benefits {
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+					.business-plan-benefit {
+						display: flex;
+						gap: 12px;
+						align-items: center;
+					}
+				}
+				.pricing-get-started {
+					width: 100%;
+					button {
+						width: 100%;
+						background-color: $secondary-color;
+						color: #fefefe;
+						font-size: 16px;
+						border: none;
+						padding: 16px 0;
+						border-radius: 8px;
+					}
+				}
+				&:nth-child(2) {
+					height: 408px;
+				}
+			}
+		}
+	}
+}

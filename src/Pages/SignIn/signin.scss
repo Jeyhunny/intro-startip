@@ -1,0 +1,105 @@
+#sign-in {
+	background-image: url('../../assets/images/Sign-in-background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	.sign-in {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		.sign-in-center {
+			background-color: #101010;
+			padding: 44px;
+			.sign-in-center-header {
+				h3 {
+					font-size: 42px;
+					line-height: 50px;
+					padding: 0 45px 44px 45px;
+				}
+			}
+			form {
+				label {
+					opacity: 0.7;
+				}
+				.form-login {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5rem;
+					.sign-in-input {
+						padding: 13px 18px;
+						width: 100%;
+						background-color: transparent;
+						border: 1px solid #bcbcbc;
+						color: #bcbcbc;
+						margin-top: 6px;
+						border-radius: 4px;
+						font-size: 14px;
+					}
+					.forgot-password-text {
+						text-align: right;
+						margin-top: 12px;
+					}
+				}
+				.form-submit {
+					margin-top: 26px;
+					text-align: center;
+					.button-submit {
+						background-color: #240360;
+						color: white;
+						border: none;
+						width: 100%;
+						padding: 13px 0;
+						margin-bottom: 14px;
+					}
+					#or {
+						margin-top: 44px;
+						p {
+							display: flex;
+							align-items: center;
+							font-size: 14px;
+							&::before {
+								content: '';
+								display: inline-block;
+								width: 100%;
+								height: 0.5px;
+								color: #bcbcbc;
+								background-color: #bcbcbc;
+								margin-right: 21px;
+							}
+							&::after {
+								content: '';
+								width: 100%;
+								height: 0.5px;
+								color: #bcbcbc;
+								background-color: #bcbcbc;
+								margin-left: 21px;
+							}
+						}
+					}
+				}
+			}
+			.other-entries {
+				display: flex;
+				justify-content: center;
+				gap: 2rem;
+				margin-top: 1.5rem;
+				.entries {
+					display: flex;
+					justify-content: center;
+					gap: 2rem;
+				}
+				.social-icons {
+					width: 76px;
+					height: 48px;
+					background-color: white;
+					border-radius: 4px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}

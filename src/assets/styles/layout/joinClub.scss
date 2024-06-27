@@ -1,0 +1,51 @@
+@import '../base/colors';
+
+#join-club {
+    margin-bottom: 100px;
+	.join-club {
+		display: flex;
+		& > div {
+			width: 50%;
+		}
+		.join-club-left {
+			h3 {
+				color: $color-mindaro;
+				font-size: 42px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 23px;
+				line-height: 36px;
+			}
+		}
+		.join-club-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			form {
+				display: flex;
+				gap: 20px;
+				input {
+					padding: 13px 20px 13px 8px;
+					background-color: transparent;
+					border: 1px solid #8e8e8e;
+                    color: #eeeeee;
+					&:focus {
+						outline: none;
+					}
+                    &::placeholder {
+                        color: #C5C5C5;
+                    }
+				}
+				button {
+					padding: 10px 25px;
+					background-color: $secondary-color;
+					color: #eeeeee;
+					border: none;
+					font-size: 16px;
+					border-radius: 1px;
+				}
+			}
+		}
+	}
+}

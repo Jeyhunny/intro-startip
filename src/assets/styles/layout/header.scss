@@ -1,0 +1,50 @@
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	transition: 0.3s all;
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 26px 0;
+		nav {
+			ul {
+				display: flex;
+				align-items: center;
+				gap: 40px;
+				li {
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+		.header-buttons {
+			display: flex;
+			gap: 1rem;
+			.signin-button {
+				width: 154px;
+				height: 44px;
+				background-color: transparent;
+				color: white;
+				border: 1px solid white;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.signup-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 154px;
+				height: 44px;
+				border-radius: 4px;
+				background-color: $secondary-color;
+				border: none;
+				color: white;
+			}
+		}
+	}
+}

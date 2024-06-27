@@ -1,0 +1,18 @@
+@import './assets/styles/index.scss';
+
+@font-face {
+	font-family: Satoshi;
+	src: url('./assets/styles/fonts/satoshi/WEB/fonts/Satoshi-Regular.ttf');
+}
+
+body {
+	background-color: #111111;
+	font-family: Satoshi;
+	color: #eeeeee;
+}
+.banner-section {
+	background-image: url('./assets//images/background-image.svg');
+}
+button {
+	cursor: pointer;
+}

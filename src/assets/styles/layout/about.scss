@@ -1,0 +1,70 @@
+.about-community-game {
+    padding: 60px 0 240px 0;
+    color: #EEEEEE;
+	.about-community {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		.what-community {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: 2.5rem;
+			.community-heading {
+				font-size: 42px;
+				font-family: Syne;
+			}
+			p {
+				font-size: 24px;
+			}
+		}
+	}
+	.answers-about-community {
+		display: flex;
+		gap: 56px;
+		.answers-div {
+			display: flex;
+            gap: 2rem;
+			div:nth-child(1) {
+				display: flex;
+				align-items: start;
+				justify-content: center;
+				padding: 19px 36px 19px 0;
+				position: relative;
+				.circle {
+					width: 30px;
+					height: 30px;
+					background-color: #30313f;
+					border-radius: 50%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+				}
+				img {
+					width: 20px;
+                    position: relative;
+                    left: 8px;
+				}
+			}
+			div:nth-child(2) {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				max-width: 530px;
+				h4 {
+					font-size: 18px;
+				}
+				p {
+					max-width: 393px;
+					line-height: 22px;
+					font-size: 14px;
+                    color: #D9D9D9;
+				}
+			}
+		}
+	}
+}
